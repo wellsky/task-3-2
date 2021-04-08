@@ -1,6 +1,6 @@
-data class Note(
-    val id: Int? = null,
+data class Note (
     var title: String,
     var text: String,
-    var deleted: Boolean = false
-)
+    override var id: Long? = null,
+    override var deleted: Boolean = false
+): Content()
